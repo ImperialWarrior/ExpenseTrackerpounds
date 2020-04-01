@@ -135,23 +135,23 @@ input[type='text'], input[type='number'] {
     border-right: 5px solid #2ecc71 ;
 }
 
+@media only screen and (min-width: 768px) {
 .delete-btn {
-    background-color: #e74c3c ;
-    border: 0;
-    color: #fff;
-    font-size: 20px;
-    line-height: 20px;
-    padding: 2px 5px;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(-100%, -50%);
-    opacity: 0;
-    cursor: pointer;
-
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-.list li:hover .delete-btn {
-    opacity: 1;
-    transition: opacity 0.3s ease;
+  .list li:hover .delete-btn {
+  opacity: 1;
 }
